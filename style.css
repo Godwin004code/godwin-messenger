@@ -1,0 +1,120 @@
+:root {
+    --text-base: #202f72;
+    --hover-color: #1ed760;
+    --primary-color: #222326;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+}
+body .light {
+    display: none;
+}
+body .dark i {
+    color: black;
+}
+body .name {
+    color: white;
+    
+}
+.hero {
+  color: white;  
+}
+
+body .output {
+    color: white;
+}
+body .name {
+    color: var(--text-base);
+    font-family: monospace;
+}
+body .hero p {
+    font-size: 1.1rem;
+    padding-top: .7rem;
+    letter-spacing: 1px;
+}
+.output {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+header {
+    width: 100%;
+    background-color: var(--text-base);
+    padding: .8rem 0;
+}
+.header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    width: 90%;
+    margin: 5rem auto;
+    
+}
+.hero h2 {
+    font-size: 2.4rem;
+}
+main {
+    width: 100%;
+}
+form {
+    padding: 4rem 1rem;
+    width: 50%;
+    margin: 4rem auto 2rem auto;
+    background-color: var(--text-base);
+}
+form label {
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.3rem;
+}
+input {
+    margin-top: 1rem;
+    width: 100%;
+    display: block;
+    padding: .7rem .6rem;
+}
+form p {
+    margin-bottom: 4rem;
+}
+#mes {
+    padding-bottom: 5rem;
+}
+button {
+    width: 100%;
+    padding: .7rem 0;
+    text-transform: uppercase;
+}
+body input:focus, body input:active {
+    outline: 0;
+    border: 2px solid var(--text-base);
+}
+.modal {
+    background-color: green;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+    display: none;
+}
+.modal.show-modal {
+    display: block;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        width: 768px;
+        max-width: 100%;
+    }
+    form {
+        width: 80%;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lightMode.css">
+    <title>Godwin Messenger</title>
+</head>
+<body>
+    <div class="modal">
+        Your message has been sent successfully
+    </div>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <h2 style="color: white; font-family: monospace; font-size: 1.6rem;">godwin</h2>
+            </div>
+            <div class="time">
+                <div class="output"></div>
+            </div>
+            <div class="theme-btn">
+                <div class="dark">
+                    <i class="fa fa-moon-o"></i>
+                </div>
+                <div class="light">
+                    <i class="fa fa-sun-o"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <h2><span id="greet">Hola🖐</span>,I'm <span class="name">Godwin</span> </h2>
+        <p>I created this website for people to reach out to me easily, You can send your message be it any project idea or greeting through here..</p> 
+    </div>
+    <main>
+        <form method="POST" id="form">
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="mes">message</label>
+                <input type="text" name="mes" id="mes">
+            </p>
+            <button id="send">Send Message</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

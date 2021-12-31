@@ -1,0 +1,27 @@
+:root {
+    --text-base: #202f72;
+    --hover-color: #1ed760;
+    --primary-color: #222326;
+}
+
+body.dark {
+    background-color: white;
+}
+body.dark form {
+    background-color: var(--hover-color);
+}
+body.dark .hero {
+    color: var(--text-base);
+}
+body.dark .name {
+    color: var(--hover-color);
+}
+body.dark header {
+    background-color: var(--hover-color);
+}
+body.dark .light {
+    display: block;
+}
+body.dark .dark {
+    display: none;
+}
